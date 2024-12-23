@@ -105,11 +105,11 @@ export const projectDetails = [
 },
 {
     id:2,
-    Project_name:"Airline Management System",
-    Project_desc: "This is django based Ailine management system, that can be used airline and airport administrators to manage various flights, passengers,runways etc. A token bucket is implemented to manage runways, where they can be flights can be added sequentially until the max capacity is added. It also has access to all passengers, thus giving ability to manage their travel ",
-    tech_stack:["Django","Python","HTML","CSS"],
+    Project_name:"Sephora Recommendation System",
+    Project_desc: "Implemented a deep learning model with multilayer neural architecture using TensorFlow/Keras, including embedding layers and batch normalization, to recommend Sephora products based on user attributes like skin, hair, and product preferences, using an open-source dataset of Sephora sales, products, and reviews, while also considering price consciousness, with positive user testing feedback from college students. ",
+    tech_stack:["Python","Keras","PyTorch"],
     project_img: Project3,
-    project_url: "https://github.com/JANARDHANAREDDYMS/DBMS-PROJECT.git",
+    project_url: "https://github.com/JANARDHANAREDDYMS/mlproject.git",
     reverse: false,
 },
 {

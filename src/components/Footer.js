@@ -44,20 +44,11 @@ const Footer = () => {
                     variants={fadeInTopVariant}
                     initial="hidden"
                     whileInView="visible"
-                    size="h4"
+                    size="h3"
                     align="center">
                     My Contact
                 </Heading>
-                <Heading
-                    as={motion.h2}
-                    variants={fadeInTopVariant}
-                    initial="hidden"
-                    whileInView="visible"
-                    size="h2"
-                    align="center"
-                    top="0.5rem">
-                    Contact <BlueText> Me here</BlueText>
-                </Heading>
+              
             </FlexContainer>
 
             {/* Second Row - Let's Talk and Form */}

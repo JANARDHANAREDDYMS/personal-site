@@ -22,13 +22,14 @@ const MyProjects = () =>{
         right="2%"
         responsiveLeft="1rem"
         responsiveRight="1rem"
-        responsiveTop="10%">
+        
+        >
             <Heading 
             as={motion.h4}
             variants={fadeInTopVariant}
             initial="hidden"
             whileInView="visible"
-            size="h4"
+            size="h3"
             >
             My Projects
             </Heading>
@@ -43,7 +44,7 @@ const MyProjects = () =>{
 
             {projectDetails.map((project)=>(
                 <PaddingContainer 
-                
+                responsiveBottom="1rem"
             
             key={project.id} top="5rem" bottom="5rem">
                     <Project data={project} />

@@ -1,42 +1,39 @@
 import styled from "styled-components"
 
 export const ShowcaseParticleContainer = styled.div`
-    postion:relative;
-    max-width:300px;
-
-    @media(max-width: ${({theme})=>theme.
-    breakpoints.mobile}){
-        // display: none;
-        padding-left: 20%;
-        
+    position: relative;
+    max-width: 300px;
+    
+    @media(max-width: ${({theme})=>theme.breakpoints.mobile}){
+        padding-left: 0;  // Remove the left padding
+        display: flex;    // Add flex display
+        justify-content: center;  // Center horizontally
+        margin: 0 auto;   // Center the container itself
+        width: 100%;      // Take full width
     }
-`
+`;
 
 export const ShowcaseImageCard = styled.div`
     border: 7px solid white;
     width: max-content;
     border-radius: 4rem;
     position: relative;
-    overflow:hidden;
+    overflow: hidden;
     display: flex;
     
     img {
-        width: 300px; // Set the desired width
-        height: 100%;
-        display: block;  // Add this
-        object-fit: cover; // Set height to "auto" to maintain aspect ratio
-    }
-    @media(max-width: ${({theme})=>theme.
-    breakpoints.mobile}){
         width: 300px;
         height: 100%;
         display: block;
-        justify:center;
         object-fit: cover;
-        
     }
 
-   
+    @media(max-width: ${({theme})=>theme.breakpoints.mobile}){
+        width: 300px;     // Fixed width
+        margin: 0 auto;   // Center the card
+        display: flex;    // Maintain flex display
+        justify-content: center;  // Center the image
+    }
 `;
 
  

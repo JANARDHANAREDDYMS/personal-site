@@ -256,8 +256,8 @@ const Showcase = () =>{
                 variants={fadeInRightVariant}
                 initial="hidden"
                 whileInView="visible"
-                justify="end" paddingBottom="28rem">
-                        <ShowcaseParticleContainer justify="end" responsiveRight="5rem">
+                justify="end" paddingBottom="28rem" responsiveFlex={true}>
+                        <ShowcaseParticleContainer justify="center" responsiveRight="5rem">
                             <PaddingContainer >
                             <ShowcaseImageCard>
                             <img src={ShowcaseImg} alt="showcase"/>
@@ -265,6 +265,7 @@ const Showcase = () =>{
                             </ShowcaseImageCard>
                             </PaddingContainer>
                             
+                            </ShowcaseParticleContainer> 
 
                         <Particle
                             as={motion.img}
@@ -320,7 +321,7 @@ const Showcase = () =>{
                             width="60px"
                             left="1050px"
                             rotate="120deg"/> */}
-                        </ShowcaseParticleContainer>
+                        
                     </FlexContainer>
 
                     
