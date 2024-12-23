@@ -35,34 +35,39 @@ export const PaddingContainer = styled.div`
 
 
 export const FlexContainer = styled.div`
-    display: flex;
-    justify-content: ${({ justify }) => justify};
-    align-items: ${({ align }) => align};
-    gap: ${({ gap }) => gap};
-    flex-direction: ${({ direction, reverseFlexDirection }) => 
-        reverseFlexDirection ? (direction === 'row' ? 'row-reverse' : 'column-reverse') : direction || 'row'}; /* Reverse flex direction if reverseFlexDirection is true */
+  display: flex;
+  justify-content: ${({ justify }) => justify};
+  align-items: ${({ align }) => align};
+  gap: ${({ gap }) => gap};
+  flex-direction: ${({ direction, reverseFlexDirection }) => 
+    reverseFlexDirection ? (direction === 'row' ? 'row-reverse' : 'column-reverse') : direction || 'row'}; /* Reverse flex direction if reverseFlexDirection is true */
 
-    & > div {
-        flex: ${({ fullWidthChild }) => fullWidthChild && 1};
-        order: ${({ reverseFlexDirection }) => reverseFlexDirection ? 2 : 1};  /* Change order based on reverseFlexDirection */
+  & > div {
+    flex: ${({ fullWidthChild }) => fullWidthChild && 1};
+    order: ${({ reverseFlexDirection }) => reverseFlexDirection ? 2 : 1};  /* Change order based on reverseFlexDirection */
+  }
+
+  @media(max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    display: ${({ responsiveFlex }) => responsiveFlex ? 'flex' : 'block'};
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: ${({ responsiveDirection, reverseFlexDirection }) => 
+      reverseFlexDirection ? (responsiveDirection === 'row' ? 'row-reverse' : 'column-reverse') : (responsiveDirection || 'column')};  /* Reverse flex direction on mobile too if reverseFlexDirection is true */
+    
+    /* Adjust order based on reverseFlexDirection */
+    & > div:nth-child(1) {
+      order: ${({ reverseFlexDirection }) => reverseFlexDirection ? 2 : 1};  /* Change order on mobile */
+    }
+    & > div:nth-child(2) {
+      order: ${({ reverseFlexDirection }) => reverseFlexDirection ? 1 : 2};  /* Change order on mobile */
     }
 
-    @media(max-width: ${({theme})=>theme.breakpoints.mobile}){
-        display: ${({responsiveFlex}) => responsiveFlex ? 'flex' : 'block'};
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        flex-direction: ${({ responsiveDirection, reverseFlexDirection }) => 
-            reverseFlexDirection ? (responsiveDirection === 'row' ? 'row-reverse' : 'column-reverse') : (responsiveDirection || 'column')};  /* Reverse flex direction on mobile too if reverseFlexDirection is true */
-        
-        /* Adjust order based on reverseFlexDirection */
-        & > div:nth-child(1) {
-            order: ${({ reverseFlexDirection }) => reverseFlexDirection ? 2 : 1};  /* Change order on mobile */
-        }
-        & > div:nth-child(2) {
-            order: ${({ reverseFlexDirection }) => reverseFlexDirection ? 1 : 2};  /* Change order on mobile */
-        }
+    /* Add margin-bottom on small screens between buttons */
+    & > div:nth-child(1) {
+      margin-bottom: ${({ responsiveBottom }) => responsiveBottom || '0rem'};  /* Add margin-bottom */
     }
+  }
 `;
 
 

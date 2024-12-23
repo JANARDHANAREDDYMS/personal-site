@@ -92,6 +92,7 @@ export const projectDetails = [
         tech_stack: ["Pytorch","Python"],
         project_img: Project1,
         project_url: "https://github.com/JANARDHANAREDDYMS/yoloposemodel.git",
+        video_url: "",
         reverse: false,
 },
 {
@@ -101,6 +102,7 @@ export const projectDetails = [
         tech_stack: ["Django","Python","Postgres","AWS"],
         project_img: Project2,
         project_url: "https://github.com/JANARDHANAREDDYMS/nyuenrolls.git",
+        video_url: "https://drive.google.com/file/d/12kNKhO__RF1DxRTBmKau9c6A3iqdAxxc/view?usp=share_link",
         reverse: true,
 },
 {
@@ -110,6 +112,7 @@ export const projectDetails = [
     tech_stack:["Python","Keras","PyTorch"],
     project_img: Project3,
     project_url: "https://github.com/JANARDHANAREDDYMS/mlproject.git",
+    video_url: "",
     reverse: false,
 },
 {
@@ -119,6 +122,7 @@ export const projectDetails = [
     tech_stack: ["Python","OpenCv"],
     project_img: Project4,
     project_url: "https://github.com/JANARDHANAREDDYMS/LANEDETECTION.git",
+    video_url: "",
     reverse: true,
 }
 ]
