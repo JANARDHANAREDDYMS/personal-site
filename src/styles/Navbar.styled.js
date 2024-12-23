@@ -1,4 +1,4 @@
-import { easeIn } from "framer-motion";
+
 import styled from "styled-components";
 
 export const NavbarContainer = styled.div`
@@ -14,9 +14,6 @@ export const NavbarContainer = styled.div`
         display: none;
     }
 `;
-
-
-
 
 
 export const Logo = styled.p`

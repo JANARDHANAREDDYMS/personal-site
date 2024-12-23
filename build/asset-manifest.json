@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.aa9597cb.css",
+    "main.js": "/static/js/main.7cb41ff6.js",
+    "static/media/Project1.png": "/static/media/Project1.54987e9e45688f063bb9.png",
+    "static/media/showcase-img.jpg": "/static/media/showcase-img.8c51b8cc1b18c37648c1.jpg",
+    "static/media/janardhana-2.pdf": "/static/media/janardhana-2.bc1f535b1303647aeb51.pdf",
+    "static/media/Project2.png": "/static/media/Project2.3c6d613ccb1410fca496.png",
+    "static/media/react-omg.png": "/static/media/react-omg.496f4dbc98d8ad9aaa89.png",
+    "static/media/Project3.png": "/static/media/Project3.f1cf9ab66e1fc9155f02.png",
+    "static/media/Project4.jpg": "/static/media/Project4.72a977ba6f6c9f6e20e9.jpg",
+    "static/media/ann.txt": "/static/media/ann.f0241abd92f549fe4655.txt",
+    "static/media/aostar.txt": "/static/media/aostar.464c5e5b4579dddf775c.txt",
+    "static/media/astar.txt": "/static/media/astar.9deb4d1f05607f115315.txt",
+    "static/media/knn.txt": "/static/media/knn.acb064659b8d86de8bd4.txt",
+    "static/media/id3.txt": "/static/media/id3.ef8f7137e51f365d7d17.txt",
+    "static/media/naivebayes.txt": "/static/media/naivebayes.5ad9af2975786c496f4f.txt",
+    "static/media/em.txt": "/static/media/em.2425848ee645ead13cab.txt",
+    "static/media/lwr.txt": "/static/media/lwr.2c18d19c9468529c73a0.txt",
+    "static/media/cm.txt": "/static/media/cm.cb69805ff0e5005a155d.txt",
+    "static/media/kmeans.txt": "/static/media/kmeans.7ae4dbbb7a30eb8ac1cb.txt",
+    "index.html": "/index.html",
+    "main.aa9597cb.css.map": "/static/css/main.aa9597cb.css.map",
+    "main.7cb41ff6.js.map": "/static/js/main.7cb41ff6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aa9597cb.css",
+    "static/js/main.7cb41ff6.js"
+  ]
+}
