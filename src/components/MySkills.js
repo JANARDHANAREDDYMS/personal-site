@@ -86,7 +86,7 @@ const MySkills = () => {
                             <IconContainer size="2.5rem" color="blue">
                                 {skill.icon}
                             </IconContainer>
-                            <Heading as="h5" size="h5">
+                            <Heading as="h6" size="h6">
                                 {skill.tech}
                             </Heading>
                             <div className="progress-bar">

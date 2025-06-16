@@ -71,11 +71,19 @@ const Info = () => {
                 <IconContainer size="1.2rem">
                     <RiGraduationCapFill />
                 </IconContainer>
-                <ParaText style={{ paddingBottom: "1rem" }}>
-                    <ul style={{ margin: "0", listStylePosition: "inside" }}>
+                <ParaText style={{ paddingBottom: "1rem" }} >
+                <ul style={{ 
+                    margin: "0", 
+                    listStylePosition: "inside", 
+                    padding: "0", 
+                    textAlign: "start" 
+                }}>
                         <li>New York University</li>
-                        <li>Bangalore Institute of Technology</li>
+                        <li>Bangalore Institute of </li>
                     </ul>
+                    <div style={{ textAlign: "center", paddingLeft: "1.2rem" }}>
+                        Technology
+                    </div>
                 </ParaText>
                 </InfoContainer></LowerBodyInfo>
                 </Buttoninfo>

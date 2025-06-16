@@ -84,11 +84,13 @@ export const Heading = styled(PaddingContainer)`
             case 'h2':
                 return '3rem';
             case 'h3':
-                return '2rem';
+                return '1.75rem';
             case 'h4':
                 return '1.2rem';
             case 'h5':
                 return '1rem';
+            case 'h6':
+                return '0.85rem';
             default:
                 return;
         }

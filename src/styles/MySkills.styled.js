@@ -4,13 +4,13 @@ import styled from "styled-components";
 export const SkillsCardContainer = styled.div`
     display:grid;
     grid-template-columns:repeat(5, 1fr);
-    grid-template-rows: repeat(2, auto);
+    grid-auto-rows: 1fr;
     grid-gap:2rem;
     padding: 0 5%;
 
     .progress-bar {
         width: 70%;
-        height: 12px;
+        height: 5px;
         background-color: #eee;
         border-radius: 5px;
         margin-top: 6px;
@@ -44,8 +44,8 @@ export const SkillsCardContainer = styled.div`
         grid-template-rows: repeat(5, auto);
 
         .progress-bar {
-            width: 70%;
-            height: 7px;
+            width: 80px;
+            height: 5px;
             background-color: #eee;
             border-radius: 5px;
             margin-top: 6px;
