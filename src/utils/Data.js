@@ -97,7 +97,7 @@ export const projectDetails = [
         reverse: false,
 },
 {
-    id: 1,
+    id: 2,
         Project_name:"NYU Enrolls",
         Project_desc: " Developed an improved version of the college enrollment application. The algorithm used to waitlist into courses was changed to incorporate priority based waitlisting. Bugs present in the existing system were also fixed. We integrated a Pre Registration analytics where courses can be added and drop before the enrollment begins. ",
         tech_stack: ["Django","Python","Postgres","AWS"],
@@ -107,7 +107,7 @@ export const projectDetails = [
         reverse: true,
 },
 {
-    id:2,
+    id:1,
     Project_name:"Code Sensei",
     Project_desc: "An AI-powered interview platform for Computer Science students to practice for technical Interviews. An AI agent powered by the MCP server generates an assessment for the users based on the input prompt and the previous performance of the user. LLM to provide constrained, context-aware hints as a helper during the interview process. Code execution and compiler services were implemented using ECS with Fargate to scale based on demand for 10,000+ consecutive users. Cached performance and prompts to reduce latency and calls to Bedrock LLM. ",
     tech_stack:["AWS","EKS","Open Search","MCP","TypeScript"],
